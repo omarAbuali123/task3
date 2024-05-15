@@ -38,9 +38,14 @@
 .box .obj div{
     width: 60px;
     height: 60px;
-    background-color :green;
     margin: 5px;
     float: left;
+    text-align: left;
+
+}
+.box .obj:nth-child(odd) div::after{
+
+   content: 'x';
 
 }
 
@@ -48,19 +53,32 @@
     
     width: 670px
 }
+.box .obj:nth-child(odd) div{
+    background-color :green;
+}
 .box .obj:nth-child(even) div{
     background-color: blue;
+  
+    
 }
+.box .obj:nth-child(even) div::after{
+    content: '0';
+}
+
+
+
 .box2 div{
     width: 25px;
     height: 25px;
     display: inline-block;
-   
     background-color: rgb(182, 191, 199);
 }
-/* .box2 div:nth-child(n+6){
+.box2 div:nth-child(n+6){
     background-color: orange;
-}*/
+}
+/* .box div:nth-child(){
+    background-color: orange;
+}
 /*.box2 div:nth-child(4n+4){
     background-color: orange;
 }*/
@@ -107,49 +125,49 @@
     <div class="box" >
         
         <div class="obj">
-            <div>.</div>
-            <div>.</div>
-            <div>.</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>x</div>
-            <div>x</div>
-            <div>x</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>.</div>
-            <div>.</div>
-            <div>.</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>x</div>
-            <div>x</div>
-            <div>x</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>.</div>
-            <div>.</div>
-            <div>.</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>x</div>
-            <div>x</div>
-            <div>x</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>.</div>
-            <div>.</div>
-            <div>.</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>x</div>
-            <div>x</div>
-            <div>x</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="obj">
-            <div>.</div>
-            <div>.</div>
-            <div>.</div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         
     </div>
